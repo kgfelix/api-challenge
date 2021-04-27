@@ -1,0 +1,8 @@
+/home/kleber/repos/api-challenge/src/main/java/com/challenge/usecases/security/CheckPasswordOutput.java
+/home/kleber/repos/api-challenge/src/main/java/com/challenge/interfaces/SecurityController.java
+/home/kleber/repos/api-challenge/src/main/java/com/challenge/usecases/security/CheckPasswordInput.java
+/home/kleber/repos/api-challenge/src/main/java/com/challenge/usecases/Output.java
+/home/kleber/repos/api-challenge/src/main/java/com/challenge/ChallengeApplication.java
+/home/kleber/repos/api-challenge/src/main/java/com/challenge/usecases/security/CheckPasswordUseCase.java
+/home/kleber/repos/api-challenge/src/main/java/com/challenge/usecases/UseCase.java
+/home/kleber/repos/api-challenge/src/main/java/com/challenge/usecases/Input.java
