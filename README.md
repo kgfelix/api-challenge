@@ -14,6 +14,7 @@ Para ser considerada válida, uma senha deve possuir os seguintes característic
 * Ao menos 1 caractere especial do conjunto: '!@#$%^&*()-+';
 * Não possuir caracteres repetidos dentro do conjunto;
 
+## Implementação
 
 A API implementa conceitos da [arquitetura limpa](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html), como referência:
 
@@ -33,13 +34,14 @@ O projeto também aplicou os seguintes princípios SOLID para a construção do 
 * Princípio da segregação da interface:  muitas interfaces específicas são melhores do que uma interface única, exemplo: ```UseCase```,```Input```,```Output```;
 * Princípio da inversão da dependência: dependa de uma abstração e não de uma implementação: exemplo: ```SecurityController```.
 
-
 Devido a quantidade de artefatos produzidos pelo projeto, outros princípios SOLID: "Princípio Aberto-Fechado" e "Princípio da Substituição de Liskov" não foram implementados integralmente.
+
+O projeto utiza o [Spring Boot](https://spring.io/projects/spring-boot) para facilitar a configuração e execução da API. E o próprio framework [Spring](https://spring.io/) para implementação dos padrões de projeto inversão de controle e injeção de dependência.
 
 ## Regra de negócio
 
-A regra de negócio foi aplicada no __Use Case__ ```CheckPasswordUseCase```. Muitos ítens da regra de negócio podem ser aplicados utilizando expressões regulares, porém optei em implementar um algoritimo utilizando recursos da linguagem java para um código mais limpo.
-
+A regra de negócio foi aplicada no __Use Case__ ```CheckPasswordUseCase```. 
+A validação da senha pode ser realizada através da utilização de exressões regulares, porém optei em utilizar recursos da próŕia linguagem java, para um código mais limpo.
 ## Pré-requisitos
 * Java 9 (ou superior);
 * Maven;
@@ -67,7 +69,7 @@ mvn exec:java -Dexec.mainClass="com.challenge.ChallengeApplication"
 
 ### Executando o projeto pelo VS Code
 
-Um arquivo ```launch.json``` foi criando na raiz do projeto para execução do projeto via Visual Studio Code.
+Um arquivo ```launch.json``` foi criando na pasta ```.vscode```.
 
 ### Invocando a API
 

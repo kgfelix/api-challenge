@@ -59,16 +59,21 @@ public class CheckPasswordUseCase implements UseCase {
 		boolean haveRepeatedChar = false;
 
 		StringBuilder sb = new StringBuilder();
-		for (char ch: password.toCharArray()) {			
+		for (char ch: password.toCharArray()) {
+			// Valida se contém um dígito			
 			if (Character.isDigit(ch)) {
 				hasDigit = true;
+			// Valida se contém letra minúscula
 			} else if (Character.isLowerCase(ch)) {
 				hasLowerCase = true;
+			// Valida se contém letra maiúscula
 			} else if (Character.isUpperCase(ch)) {
 				hasUperCase = true;
+			// Valida se contém caractere especial
 			} else if (specialCharacter.contains(String.valueOf(ch))) {
 				hasSpecialChar = true;
-			} 
+			}
+			// Valida se contém  caractere repetido
 			if ( sb.toString().contains(String.valueOf(ch)) ) {
 				haveRepeatedChar = true;
 			}
