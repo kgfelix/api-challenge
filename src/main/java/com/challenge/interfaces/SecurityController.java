@@ -26,7 +26,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  * @since 2021-04-24
  */
 @RestController
-@RequestMapping("/v1/itidigital/security")
+@RequestMapping("/v1/challenge/security")
 public class SecurityController {
 	
 	@Autowired

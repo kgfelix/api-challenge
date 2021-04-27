@@ -20,7 +20,7 @@ A API implementa conceitos da [arquitetura limpa](https://blog.cleancoder.com/un
 
 
 * **Entities:** local onde objetos de domínio, regras de negócios, contratos de serviço e outras funções relacionadas à manipulação de dados do sistema estão localizados;
-* **Infrastructure:** esponsável pela configuração de todos os __frameworks__ técnicos utilizados no projeto;.
+* **Infrastructure:** responsável pela configuração de todos os __frameworks__ técnicos utilizados no projeto;.
 
 * **Use cases:** objetos que representam uma ação dentro do sistema, realizam a orquestração do fluxo de dados, ou seja, direcionam os dados para aplicação da regra de negócio, validações e posteriormente para persistência;
 
@@ -73,7 +73,7 @@ Um arquivo ```launch.json``` foi criando na pasta ```.vscode```.
 
 ### Invocando a API
 
-Através de um HTTP/REST Client (postman, Insomnia, curl, etc) invocar a API GET: ```http://localhost:8080/v1/itidigital/security/validate``` enviando o payload com a senha, no formato json: 
+Através de um HTTP/REST Client (postman, Insomnia, curl, etc) invocar a API GET: ```http://localhost:8080/v1/challenge/security/validate``` enviando o payload com a senha, no formato json: 
 
 ```json
 {
